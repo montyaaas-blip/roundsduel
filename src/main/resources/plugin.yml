@@ -1,0 +1,20 @@
+name: RoundDuel
+version: 1.0.0
+main: cz.minihry.roundduel.RoundDuelPlugin
+api-version: '26.2'
+author: Claude
+description: Kolový 2v2 až 5v5 deathmatch bez respawnu v kole
+
+commands:
+  roundduel:
+    description: Ovládání minihry RoundDuel
+    usage: /<command> <join|leave|status>
+    aliases: [rd, duel]
+
+permissions:
+  roundduel.play:
+    description: Může hrát RoundDuel
+    default: true
+  roundduel.admin:
+    description: Může nastavovat arénu a spouštět/zastavovat hru
+    default: op

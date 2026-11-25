@@ -1,0 +1,34 @@
+# RoundDuel - nastavení
+
+# Minimální počet hráčů pro automatický start odpočtu (musí sedět i do min. 1 na tým)
+min-players: 2
+# Maximální počet hráčů v jednom týmu
+max-per-team: 5
+
+# Odpočet, než se zápas spustí (po splnění min-players)
+countdown-seconds: 20
+
+# Kolik vyhraných kol stačí na výhru zápasu
+rounds-to-win: 5
+
+# Odpočet na začátku každého kola (hráči jsou na spawnu, ale nemůžou ještě bojovat)
+round-countdown-seconds: 5
+# Max. délka kola v sekundách; 0 = bez limitu. Když čas vyprší a obě strany mají
+# ještě živé hráče, kolo je remíza (nikdo nedostane bod) a hraje se znovu.
+round-time-limit-seconds: 90
+# Pauza mezi koly (po skončení kola, než začne další odpočet)
+round-end-pause-seconds: 4
+
+# Pokud hráč odejde dál než tento počet bloků od středu arény, vrátí se na spawn svého týmu
+arena-radius: 100
+
+# Kolik šípů hráč dostane na začátku každého kola
+arrows: 16
+
+# Nastavuje se příkazy /roundduel setspawn <tým> a /roundduel setlobby
+arena:
+  lobby: null
+  red:
+    spawns: []
+  blue:
+    spawns: []
